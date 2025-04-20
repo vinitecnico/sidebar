@@ -1,0 +1,61 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  flex-grow: 1;
+  margin-left: 250px;
+  transition: all 0.3s ease-in-out;
+  background-color: #f4f6f7;
+  overflow-y: auto;
+
+  &-inner {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  &-expanded {
+    margin-left: 50px;
+  }
+}
+
+.sidebar-toggle-btn {
+  position: absolute;
+  top: 2rem;
+  left: 230px; // Default position when sidebar is expanded
+  background-color: #1c7dde;
+  border: none;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #4c92d8;
+  }
+
+  &.sidebar-collapsed {
+    left: 32px; // Position when sidebar is collapsed
+  }
+}
+
+header {
+  height: 75px;
+  position: fixed;
+  top: 0;
+  z-index: 120;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-bottom: 1px solid #dadada;
+  box-sizing: border-box;
+}
