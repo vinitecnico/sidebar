@@ -1,6 +1,7 @@
 .app-container {
   display: flex;
-  height: 100vh;
+  // height: 100vh;
+  min-height: 98vh;
   overflow: hidden;
 }
 
@@ -13,7 +14,7 @@
 
   &-inner {
     padding: 2rem;
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
     margin-top: 80px;
   }
@@ -24,8 +25,9 @@
 }
 
 .sidebar-toggle-btn {
-  position: absolute;
-  top: 2rem;
+  // position: absolute;
+  position: fixed;
+  top: 3rem;
   left: 230px; // Default position when sidebar is expanded
   background-color: #1c7dde;
   border: none;
@@ -42,7 +44,7 @@
   }
 
   &.sidebar-collapsed {
-    left: 32px; // Position when sidebar is collapsed
+    left: 30px; // Position when sidebar is collapsed
   }
 }
 
@@ -55,7 +57,7 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0;
+  padding: 2rem;
   border-bottom: 1px solid #dadada;
   box-sizing: border-box;
 }

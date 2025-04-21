@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.scss'],
-  imports: [CommonModule, RouterModule, SidebarComponent], // Add RouterModule here
+  imports: [CommonModule, RouterModule, SidebarComponent],
 })
 export class ContainerComponent {
   isSidebarCollapsed = true;
